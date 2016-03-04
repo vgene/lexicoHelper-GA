@@ -1,0 +1,104 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.vgene.zyxu.lexicohelper.LearningFragment">
+
+    <LinearLayout
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:weightSum="1">
+
+
+        <ProgressBar
+            android:id="@+id/pb_status"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@drawable/text_view_border"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/tv_morpheme"
+            android:text="word"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/text_view_border"
+            android:layout_marginTop="2dp"
+            android:id="@+id/tv_exp_eng"
+            android:gravity="center"
+            android:text="meaning"
+            android:textSize="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        
+        <ListView
+            android:layout_marginTop="36dp"
+            android:id="@+id/lv_examples"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="28dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <Button
+
+            android:id="@+id/btn_remember"
+            android:textSize="16dp"
+            android:text="记得"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/btn_forgot"
+            android:textSize="16dp"
+            android:text="忘了"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:textSize="16dp"
+            android:text="开始"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</FrameLayout>

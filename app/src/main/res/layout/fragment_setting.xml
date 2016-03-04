@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#CCCCCC"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vgene.zyxu.lexicohelper.SettingFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <Button
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorPrimary"
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认"/>
+        <Button
+            android:id="@+id/btn_quick_a2n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A-N" />
+        <Button
+            android:id="@+id/btn_quick_o2z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O-Z" />
+        <Button
+            android:id="@+id/btn_quick_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All" />
+        <Button
+            android:id="@+id/btn_quick_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/lv_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
