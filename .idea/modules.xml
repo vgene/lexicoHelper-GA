@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LexicoHelper.iml" filepath="$PROJECT_DIR$/LexicoHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LexicoHelper-ADA.iml" filepath="$PROJECT_DIR$/LexicoHelper-ADA.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

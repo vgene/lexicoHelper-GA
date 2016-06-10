@@ -5,70 +5,8 @@
 
 
 
-
     <LinearLayout
-        android:background="#CCCCCC"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:weightSum="1"
-        android:layout_gravity="right|center_vertical">
-
-
-        <ProgressBar
-            android:id="@+id/pb_status"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-
-            android:gravity="center"
-            android:id="@+id/tv_word_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:background="@drawable/text_view_border"
-            android:textColor="@color/colorPrimary"
-            android:id="@+id/tv_morpheme"
-            android:text="word"
-            android:textSize="28dp"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-
-        <TextView
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@drawable/text_view_border"
-            android:layout_marginTop="2dp"
-            android:id="@+id/tv_exp_eng"
-            android:gravity="center"
-            android:text="meaning"
-            android:textSize="22dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-
-        <ListView
-            android:layout_marginTop="36dp"
-            android:id="@+id/lv_examples"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.8" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
+        android:id="@+id/ll_btns"
         android:paddingBottom="28dp"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
@@ -111,5 +49,64 @@
             android:gravity="center"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+        android:layout_gravity="right|center_vertical">
+
+
+        <ProgressBar
+            android:id="@+id/pb_status"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_word_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@drawable/text_view_border"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/tv_morpheme"
+            android:text="word"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/text_view_border"
+            android:layout_marginTop="2dp"
+            android:id="@+id/tv_exp_eng"
+            android:gravity="center"
+            android:text="meaning"
+            android:textSize="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ListView
+            android:layout_marginTop="36dp"
+            android:id="@+id/lv_examples"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8" />
+
+
+    </LinearLayout>
 
 </FrameLayout>
